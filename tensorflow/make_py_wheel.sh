@@ -62,7 +62,7 @@ build() {
   cd build
 
   apt-get update
-  apt-get install -y curl build-essential cmake git pkg-config python-pip python3-pip
+  apt-get install -y curl build-essential cmake git pkg-config # python-pip python3-pip
 
   # Install sentencepiece
   cmake ../.. -DSPM_ENABLE_SHARED=OFF -DSPM_ENABLE_TENSORFLOW_SHARED=ON
